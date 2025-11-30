@@ -9,19 +9,19 @@
 
 const fs=require('fs');
 function createFile(){
-    fs.writeFileSync('Data.txt','Hello From Server')
+    fs.writeFileSync('Data.html','Hello From Server')
     console.log("File is Created")
 }
 function readFile(){
-    let Data= fs.readFileSync('Data.txt','utf-8')
+    let Data= fs.readFileSync('Data.html','utf-8')
     console.log(Data)
 }
 function updateFile(){
-    fs.appendFileSync('Data.txt','Hi Saikripa this is server')
+    fs.appendFileSync('Data.html','Hi Saikripa this is server')
     console.log('file Updated')
 }
 function deleteFile(){
-    Data= fs.unlinkSync('Data.txt')
+    Data= fs.unlinkSync('Data.html')
 console.log('file Deleted')
 }
 // createFile();
